@@ -100,7 +100,7 @@ const Dasboard = () => {
       </div> </div>
       
        </div>
-<div className='w-[393px] h-[58px] flex gap-x-9 fixed bg-[#1D1F24] top-[760px] p-[12px] '> 
+<div className='w-[393px] h-[58px] flex gap-x-9 fixed bg-[#1D1F24] bottom-0 p-[12px] '> 
        <div className='text-white relative left-2 bottom-2'>
   <div className='hover:cursor-pointer items-center bg-[#d2f46285] rounded-full text-[#d2fb4d] p-2'>
     <FiHome className='font-bold' size={26} />
