@@ -8,7 +8,7 @@ dotenv.config();
 const app=express();
 app.use(cors());
 const __dirname=path.resolve();
-const frontPath=path.join(__dirname,"/Frontend/dist");
+const frontPath=path.join(__dirname,"../Frontend/dist");
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 const PORT=process.env.PORT;
