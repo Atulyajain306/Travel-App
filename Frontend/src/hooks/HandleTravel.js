@@ -4,7 +4,7 @@ const HandleTravel = () => {
      const {setchange,change}=useAuthContext();
    const travelled=async({people,duration,destination})=>{
           try{
-           let res=await fetch("http://localhost:5000/api/traveller",{
+           let res=await fetch("https://travel-app-4pbq.onrender.com/api/traveller",{
               method:"POST",
               headers:{"Content-Type":"application/json"},
               body:JSON.stringify({people,duration,destination})
