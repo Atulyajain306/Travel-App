@@ -7,7 +7,7 @@ import { useAuthContext } from './context/UseAuthcontext.jsx';
 function App() {
     const {change}=useAuthContext();
   return (
-    <div className='bg-black flex justify-center h-screen w-screen '>
+    <div className='bg-black flex justify-center h-screen w-screen' id='cover'>
      <div className=' w-[393px] h-[810px] bg-[#0B0809] relative ' >
       <Routes>
         <Route path="/" element={ change ? <Navigate to="/dashboard" /> : <Onboarding /> }/>

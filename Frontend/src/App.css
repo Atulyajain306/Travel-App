@@ -1,9 +1,11 @@
 @media (max-width:380px){
   #next{
     position: relative;
-    right: 14px;
+    right: 18px;
     max-width: screen;
-
+  }
+  #cover{
+    overflow-x: hidden;
   }
 }
 .no-scrollbar {
