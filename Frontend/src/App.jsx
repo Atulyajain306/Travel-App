@@ -8,7 +8,7 @@ function App() {
     const {change}=useAuthContext();
   return (
     <div className='bg-black flex justify-center h-screen w-screen '>
-     <div className=' w-[393px] h-[810px] bg-[#0B0809] relative ' id='cover' >
+     <div className=' w-[393px] h-[810px] bg-[#0B0809] relative ' >
       <Routes>
         <Route path="/" element={ change ? <Navigate to="/dashboard" /> : <Onboarding /> }/>
         <Route path="/dashboard" element={<Dasboard />} />

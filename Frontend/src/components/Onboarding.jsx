@@ -73,7 +73,7 @@ const Onboarding = () => {
     <button className={` ${color ==="Friends" ? "bg-blue-600" :"bg-[#333333]"} w-40 cursor-pointer text-center px-5 justify-center items-center gap-x-1 py-4 flex rounded-md`}  onClick={()=>{Handlecolor("Friends")}}> 
     <GiThreeFriends size={30} /> Friends </button> 
         </div>
-  <button onClick={Submit} className='bg-[#3643FB] py-2 hover:cursor-pointer px-10 relative right-1 top-[150px] hover:bg-blue-600 w-full rounded-md text-center '>Continue</button>        
+  <button onClick={Submit} className='bg-[#3643FB] py-2 hover:cursor-pointer px-10 relative overflow-hidden top-[150px] hover:bg-blue-600 w-full rounded-md text-center' id='next'>Continue</button>        
          </div>
    
       </div>

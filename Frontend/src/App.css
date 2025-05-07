@@ -1,4 +1,11 @@
+@media (max-width:380px){
+  #next{
+    position: relative;
+    right: 14px;
+    max-width: screen;
 
+  }
+}
 .no-scrollbar {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
