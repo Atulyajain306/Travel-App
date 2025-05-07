@@ -7,6 +7,23 @@
   #cover{
     overflow-x: hidden;
   }
+  #image{
+     width: 350px;
+     height: 350px;
+  }
+  #arrow{
+    position: relative;
+    right: 30px;
+  }
+  #see{
+    position: relative;
+    right: 20px;
+  } 
+  #places{
+    width: 367px;
+    position: relative;
+    right: 45px;
+  }
 }
 .no-scrollbar {
   scrollbar-width: none; /* Firefox */

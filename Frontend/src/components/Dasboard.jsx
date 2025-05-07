@@ -39,11 +39,11 @@ const Dasboard = () => {
        
  <div className='text-white font-medium text-4xl  relative top-36 left-[32px] z-10'> {q.destination.toUpperCase()}</div>
 
-   <div className='text-white font-medium cursor-pointer text-4xl relative top-36 right-5 z-10'><GoArrowUpRight size={30}/></div></div> 
+   <div className='text-white font-medium cursor-pointer text-4xl relative top-36 right-5 z-10' id='arrow'><GoArrowUpRight size={30}/></div></div> 
    <div className='text-white font-medium text-sm  relative top-36 left-[40px] z-10'>
       {JourneyDuration()}
    </div>
-       <div className='pt-10 left-[18px] top-10 relative '><img className='w-[360px] h-[350px] rounded-3xl border border-gray-500 opacity-85 backdrop-blur-2xl' src={images[picture]} alt="" /></div>
+       <div className='pt-10 left-[18px] top-10 relative '><img className='w-[360px] h-[350px] rounded-3xl border border-gray-500 opacity-85 backdrop-blur-2xl' src={images[picture]} alt="" id='image' /></div>
        <div className='flex gap-x-20 relative bottom-4'>
        <div className=' z-30  bg-gray-700 font-medium flex p-[18px] left-9 top-2 cursor-pointer  rounded-full w-4 h-4 items-center relative'><div><AiOutlineClockCircle className='z-20 w-6 h-6 bottom-0 right-3 text-[#d2fb4d] rounded-full relative' size={20} /></div>  <div className='text-white text-xs w-18'>{q.duration} <div className='text-[#a2a1a1]'>Duration</div> </div></div>
        <div className=' z-30  bg-gray-700 font-medium flex p-[18px] left-9 top-2 cursor-pointer  rounded-full w-4 h-4 items-center relative'><div><MdOutlinePeopleOutline className='z-20 w-6 h-6 bottom-0 right-3 text-[#d2fb4d] rounded-full relative' size={20} /></div>  <div className='text-white text-xs w-18'>{q.persons} <div className='text-[#a2a1a1]'>Group_Size</div> </div></div>
@@ -61,14 +61,14 @@ const Dasboard = () => {
         <img className='relative w-96 h-50 bottom-[83px] right-16 size-50' src="/Plane (1).png" alt="" />
          </div>  
          </div> </div>
-       <div className='flex justify-between'><div className='text-white relative top-[74px] font-medium text-2xl left-[18px]'>Accomodation</div> <div className='underline text-sm text-[#D1F462] relative right-2 top-20 cursor-pointer font-medium'>See all</div> </div>
+       <div className='flex justify-between'><div className='text-white relative top-[74px] font-medium text-2xl left-[18px]'>Accomodation</div> <div className='underline text-sm text-[#D1F462] relative right-2 top-20 cursor-pointer font-medium' id='see'>See all</div> </div>
      <div className='flex gap-x-4 w-[400px] h-[350px] overflow-x-scroll mb-10 no-scrollbar'>
-        <div className='w-[218px] h-[239px] rounded-t-2xl left-[28px] relative top-[90px] bg-[#4D4D4D] mb-16 rounded-b-2xl'><img src="/shinagawa.png" className='w-[218px] h-[124px] rounded-t-2xl' alt="" /> <div className=' text-[#F5F5F5] relative left-[8px] top-1 font-medium '>Shinagawa Prince Hotel</div> <div className='relative left-[8px] top-2 text-sm text-[#F5F5F5] gap-x-1 font-medium flex '>Check-in: <div className='font-normal '>{ currentDate()},11:15 pm</div></div>
-        <div className='relative left-[8px] top-2 text-sm text-[#F5F5F5] gap-x-1 font-medium flex'>Check-out: <div className='font-normal'>{daysLater( new Date(),"2 Days")},11:15 am</div></div> <div className='relative top-4 left-3 text-sm text-[#F5F5F5] font-medium'>2 Nights</div> <div className='text-[#8afa40] items-center flex gap-x-1 relative left-24 bottom-1 font-semibold text-sm'> <GiConfirmed /> Confirmed</div> </div>
-        <div className='w-[218px] h-[239px] rounded-t-2xl left-[28px] relative top-[90px] bg-[#4D4D4D] mb-16 rounded-b-2xl'><img src="/mercure.png" className='w-[218px] h-[124px] rounded-t-2xl' alt="" /> <div className=' text-[#F5F5F5] relative left-[8px] top-1 font-medium '>Mercure Tokyo Hotel</div> <div className='relative left-[8px] top-2 text-sm text-[#F5F5F5] gap-x-1 font-medium flex '>Check-in: <div className='font-normal '>{ daysLater(new Date(),"2 Days")}, 11:15 pm</div></div>
-        <div className='relative left-[8px] top-2 text-sm text-[#F5F5F5] gap-x-1 font-medium flex'>Check-out: <div className='font-normal'>{daysLater( new Date(), "4 Days")},11:15 am</div></div> <div className='relative top-4 left-3 text-sm text-[#F5F5F5] font-medium'>2 Nights</div><div className='text-[#fa5340] items-center flex gap-x-1 relative left-24 bottom-1 font-semibold text-sm'> <GiBackwardTime size={20} /> Pending</div> </div>
+        <div className='w-[218px] h-[239px] rounded-t-2xl left-[28px] relative top-[90px] bg-[#4D4D4D] mb-16 rounded-b-2xl'><img src="/shinagawa.png" className='w-[218px] h-[124px] rounded-t-2xl' alt="" /> <div className=' text-[#F5F5F5] relative left-[8px] top-1 font-medium '>Shinagawa Prince Hotel</div> <div className='relative left-[8px] top-2 text-xs text-[#F5F5F5] gap-x-1 font-medium flex '>Check-in: <div className='font-normal '>{ currentDate()},11:15 pm</div></div>
+        <div className='relative left-[8px] top-2 text-xs text-[#F5F5F5] gap-x-1 font-medium flex'>Check-out: <div className='font-normal'>{daysLater( new Date(),"2 Days")},11:15 am</div></div> <div className='relative top-4 left-3 text-sm text-[#F5F5F5] font-medium'>2 Nights</div> <div className='text-[#8afa40] items-center flex gap-x-1 relative left-24 bottom-1 font-semibold text-sm'> <GiConfirmed /> Confirmed</div> </div>
+        <div className='w-[218px] h-[239px] rounded-t-2xl left-[28px] relative top-[90px] bg-[#4D4D4D] mb-16 rounded-b-2xl'><img src="/mercure.png" className='w-[218px] h-[124px] rounded-t-2xl' alt="" /> <div className=' text-[#F5F5F5] relative left-[8px] top-1 font-medium '>Mercure Tokyo Hotel</div> <div className='relative left-[8px] top-2 text-xs text-[#F5F5F5] gap-x-1 font-medium flex '>Check-in: <div className='font-normal '>{ daysLater(new Date(),"2 Days")}, 11:15 pm</div></div>
+        <div className='relative left-[8px] top-2 text-xs text-[#F5F5F5] gap-x-1 font-medium flex'>Check-out: <div className='font-normal'>{daysLater( new Date(), "4 Days")},11:15 am</div></div> <div className='relative top-4 left-3 text-sm text-[#F5F5F5] font-medium'>2 Nights</div><div className='text-[#fa5340] items-center flex gap-x-1 relative left-24 bottom-1 font-semibold text-sm'> <GiBackwardTime size={20} /> Pending</div> </div>
       </div>
-  <div className='flex justify-between'><div className='text-white relative bottom-[7px] font-medium text-2xl left-[18px]'>Activities</div> <div className='underline text-sm text-[#D1F462] relative right-2  cursor-pointer font-medium'>See all</div> </div>
+  <div className='flex justify-between'><div className='text-white relative bottom-[7px] font-medium text-2xl left-[18px]'>Activities</div> <div className='underline text-sm text-[#D1F462] relative right-2  cursor-pointer font-medium' id='see'>See all</div> </div>
   <div className='w-[353px]  h-[114px] rounded-lg relative left-[18px] mb-4 bg-[#333333]' >
      <div className='flex gap-x-5'>
     <div className='text-black bg-[#D3F462] rounded-lg relative text-sm w-fit px-2 py-1 font-medium top-2 left-[10px]'>Day Plan</div>
@@ -85,7 +85,7 @@ const Dasboard = () => {
      <div className='flex gap-x-3'>
      <div className='relative left-[18px] top-2 bg-[#D3F462] w-fit px-2 font-medium mb-10 text-[#0B0809] rounded-3xl'>Day 1 {currentDate()}</div>
      <div className='bg-none text-[#D3F462] font-medium top-2 flex content-center relative left-[28px] '> <LiaHikingSolid className='' size={20} /> 3 Activities</div></div>
-     <div className='w-[373px] left-[9px] mb-5 relative h-[415px] rounded-xl border border-[#D3F462]'>
+     <div className='w-[373px] left-[9px] mb-5 relative h-[415px] rounded-xl border border-[#D3F462]' id='places'>
        <div className='w-[355px] flex left-[7px] mb-5 top-[5px] bg-[#4D4D4D] rounded-lg relative h-[120px]'><img className='w-[120px] h-[120px] rounded-l-lg' src="/Temple.png" alt="" /> <div> <div className='text-sm relative top-4 left-[10px] font-normal text-[#F5F5F5] '>Senso-ji Temple & Nakamise Shopping Street Senso-ji</div> <div className='text-xs relative left-[10px] font-normal flex top-6 text-[#F5F5F5]'>Timing: <div className='text-xs relative left-[3px] font-light text-[#F5F5F5]'>8:15 am Morning</div> </div>
      <div className='text-xs relative left-[10px] font-normal flex top-6 text-[#F5F5F5]'>Duration: <div className='text-xs relative left-[3px] font-light text-[#F5F5F5]'>3 hours</div> </div>
      <div className='text-xs relative left-[10px] font-normal flex top-6 text-[#F5F5F5]'>Pick up: <div className='text-xs relative left-[3px] font-light text-[#F5F5F5]'>From Hotel</div> </div>
@@ -102,7 +102,7 @@ const Dasboard = () => {
        </div>
 <div className='w-[393px] h-[58px] flex gap-x-9 fixed bg-[#1D1F24] bottom-0 p-[12px] '> 
        <div className='text-white relative left-2 bottom-2'>
-  <div className='hover:cursor-pointer items-center bg-[#d2f46285] rounded-full text-[#d2fb4d] p-2'>
+  <div className='hover:cursor-pointer items-center bg-[#d2f46285] rounded-full text-[#d2fb4d] p-2' >
     <FiHome className='font-bold' size={26} />
   </div>
 </div>
