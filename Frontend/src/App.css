@@ -5,7 +5,7 @@
     max-width: screen;
   }
   #cover{
-    
+    overflow-x: hidden;
   }
   #image{
      width: 350px;
